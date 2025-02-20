@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  .navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+  }
+  .navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+  }
+  .menu-section {
+      padding: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .menu-item .title {
+      font-weight: bold;
+    }
+
+    .menu-item .details {
+      font-style: italic;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .list-item {
+      margin-bottom: 10px;
+    }
+
+    
+    .team-logo img {
+      width: 50px; 
+      height: auto;
+      margin-right: 15px;
+    }
+
+    .prize-image img {
+      width: 100px; 
+      height: auto;
+    }
+
+    .bracket-image img {
+      width: 100%; 
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="contact.html">CONTACT ME</a></li>
+    </ul>
+  </nav>
+
+  <section class="menu-section">
+    <h2>Volleyball Tournament Menu</h2>
+
+    
+    <div class="menu-item">
+      <div class="title">Tournament Schedule</div>
+      <div class="details">
+        <ul>
+          <li>Day 1: Match 1 - 2:00 PM</li>
+          <li>Day 2: Match 2 - 5:00 PM</li>
+          <li>Day 3: Final Match - 4:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="menu-item">
+      <div class="title">Teams</div>
+      <div class="details team-logo">
+        <img src="slammers.png" alt="Team A Logo">
+        <img src="spread.png" alt="Team B Logo">
+        <ul>
+          <li>Team A</li>
+          <li>Team B</li>
+          <li>Team C</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="menu-item">
+      <div class="title">Rules and Regulations</div>
+      <div class="details">
+        <ul>
+          <li>Best of 3 sets</li>
+          <li>Rally scoring system</li>
+          <li>Each team can have a maximum of 6 players on the court at once</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="menu-item">
+      <div class="title">Prize Pool</div>
+      <div class="details prize-image">
+        <ul>
+          <li>1st Place: $1000</li>
+          <li>2nd Place: $500</li>
+          <li>3rd Place: $250</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="menu-item">
+      <div class="title">Tournament Bracket</div>
+      <div class="details bracket-image">
+        <img src="bracket.jpg" alt="Tournament Bracket">
+      </div>
+    </div>
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+  .navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+  }
+  .navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #333;
+      color: white;
+      padding: 40px;
+    }
+
+    .contact-form {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      height: 200px;
+      resize: none;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="contact.html">CONTACT ME</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-form">
+      <h2>Sign In</h2>
+      <form action="mailto:your-email@example.com" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <p>If you prefer, you can also contact me via:</p>
+    <p>Email: <a href="xylinmaganda@gmail.com">xylinmaganda@gmail.com</a></p>
+    <p>Phone: 09183297321</p>
+  </section>
+
+</body>
+</html>
